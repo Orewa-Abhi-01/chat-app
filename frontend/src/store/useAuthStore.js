@@ -4,7 +4,7 @@ import toast from "react-hot-toast";
 // import { get } from "mongoose";
 import io from "socket.io-client";
 
-const BASE_URL = import .meta.env.MODE === "development" ? "http://localhost:5001/api" : "/";
+const BASE_URL = "http://localhost:5001/api" ;
 const useAuthStore = create((set, get) => ({
   authUser: null,   //bcz we don't know user is auth or not yet
   isSigningUp: false,
